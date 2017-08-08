@@ -1,0 +1,30 @@
+
+.header {
+  height: 50vh;
+  #umbrella {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    z-index: -1;
+  }
+  .social-desktop {
+    display: none;
+    @media #{$breakpoint-large} {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .nav-pages {
+      display: flex;
+    }
+  }
+}
+.profile-pic {
+  @include size(50%);
+}
