@@ -14,11 +14,10 @@
   font-family: "gotham-bold";
   src: url("../../fonts/Gotham-Bold.otf");
 }
-
 h1 {
   font-family: "playfair-display-reg";
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 35px;
   a {
     color: $grey;
     text-decoration: none;
@@ -27,16 +26,33 @@ h1 {
     background: transparent;
   }
 }
-
 h2 {
   font-family: "gotham-bold";
   text-transform: uppercase;
   font-size: 14px;
 }
-
 p {
   font-family: "gotham-regular";
   font-size: 14px;
   letter-spacing: 1.75px;
   line-height: 45px;
+}
+.mobile-nav-content {
+  li {
+    a {
+      text-decoration: none;
+      color: $grey;
+      font-family: "gotham-bold";
+      font-size: 20px;
+    }
+  }
+  i {
+    font-size: 34px;
+  }
+}
+.footer {
+  p {
+    font-family: "playfair-display-bold";
+    font-size: 12px;
+  }
 }

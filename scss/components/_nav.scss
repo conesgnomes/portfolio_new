@@ -27,10 +27,10 @@ nav {
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
         cursor: pointer;
         span {
           display: block;
@@ -102,33 +102,46 @@ nav {
       flex-direction: column;
       justify-content: center;
       justify-content: space-around;
-      -webkit-transition:height, 0.3s linear;
-      -moz-transition: height, 0.3s linear;
-      -ms-transition: height, 0.3s linear;
-      -o-transition: height, 0.3s linear;
-      transition: height, 0.3s linear;
+      -webkit-transition:height, 0.25s linear;
+      -moz-transition: height, 0.25s linear;
+      -ms-transition: height, 0.25s linear;
+      -o-transition: height, 0.25s linear;
+      transition: height, 0.25s linear;
       &.open {
-        height: 100px;
-        -webkit-transition:height, 0.3s linear;
-        -moz-transition: height, 0.3s linear;
-        -ms-transition: height, 0.3s linear;
-        -o-transition: height, 0.3s linear;
-        transition: height, 0.3s linear;
+        height: 120px;
+        -webkit-transition:height, 0.25s linear;
+        -moz-transition: height, 0.2s linear;
+        -ms-transition: height, 0.25s linear;
+        -o-transition: height, 0.25s linear;
+        transition: height, 0.25s linear;
       }
-      hr {
-        width: 70%;
-        border-color: $grey;
-      }
-      ul {
-        list-style: none;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+      .mobile-nav-text {
+        // display: none;
+        // -webkit-transition:height, 0.25 linear;
+        // -moz-transition: height, 0.25s linear;
+        // -ms-transition: height, 0.25s linear;
+        // -o-transition: height, 0.25s linear;
+        // transition: height, 0.25s linear;
+        hr {
+          width: 70%;
+          border-color: $grey;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          padding: 7px 0 0 0;
+          justify-content: space-around;
+          li {
+            padding: 0;
+            margin: 0;
+          }
+        }
       }
       .social-mobile {
         display: flex;
         justify-content: space-around;
+        margin: 15px 0 40px 0;
       }
     }
   }
