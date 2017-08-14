@@ -14,28 +14,70 @@
   font-family: "gotham-bold";
   src: url("../../fonts/Gotham-Bold.otf");
 }
+
+.name-bar {
+  #title {
+    font-family: "playfair-display-reg";
+    text-transform: uppercase;
+    font-size: 35px;
+    @media #{$breakpoint-medium} {
+      font-size: 50px;
+    }
+    a {
+      color: $grey;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+    }
+  }
+  .nav-desktop {
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: $grey;
+          font-family: "gotham-bold";
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
 h1 {
   font-family: "playfair-display-reg";
-  text-transform: uppercase;
-  font-size: 35px;
-  a {
-    color: $grey;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-  }
+  text-transform: lowercase;
+  font-size: 25px;
+  color: $grey;
 }
 h2 {
   font-family: "gotham-bold";
   text-transform: uppercase;
   font-size: 14px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+  }
+}
+.project-title {
+  font-family: "gotham-regular";
+  text-transform: lowercase;
+  font-size: 15px;
+  color: $grey;
 }
 p {
   font-family: "gotham-regular";
   font-size: 14px;
   letter-spacing: 1.75px;
   line-height: 45px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+  }
+}
+.social-desktop {
+  i {
+    font-size: 20px;
+    color: $grey;
+  }
 }
 .mobile-nav-content {
   li {
@@ -48,6 +90,14 @@ p {
   }
   i {
     font-size: 34px;
+    color: $grey;
+  }
+}
+.nav-mobile-dark {
+  .mobile-nav-content {
+    i {
+      color: $gold;
+    }
   }
 }
 .footer {

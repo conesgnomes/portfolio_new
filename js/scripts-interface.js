@@ -5,6 +5,7 @@ $(function() {
   $('#nav-icon').click(function(){
 		$(this).toggleClass('open');
     $('.nav-mobile').toggleClass('open');
+    $('.nav-mobile-dark').toggleClass('open');
     $('.mobile-nav-content').toggleClass('open');
     $('.mobile-nav-text').toggleClass('open');
     $('.nav-span').toggleClass('open');

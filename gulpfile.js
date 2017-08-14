@@ -92,7 +92,7 @@ gulp.task('serve', ["build"], function() {
   browserSync.init({
     server: {
       baseDir: "./",
-      index: "index.html"
+      index: "projects.html" // change this to view different pages rendered
     }
   });
 
