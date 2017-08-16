@@ -2,4 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 200px;
+  @media #{$breakpoint-large} {
+    margin-top: 300px;
+  }
 }

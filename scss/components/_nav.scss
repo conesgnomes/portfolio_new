@@ -1,3 +1,4 @@
+// for desktop landing page
 .nav-desktop {
   display: none;
   @media #{$breakpoint-large} {
@@ -15,8 +16,40 @@
     }
   }
 }
+// for all desktop pages except landing page
+.nav-desktop-dark {
+  display: none;
+  @media #{$breakpoint-large} {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      align-items: baseline;
+      list-style: none;
+      margin-right: 25px;
+      li {
+        text-decoration: none;
+      }
+      .middle-nav-item {
+        margin: 0 30px 0 30px;
+      }
+      .projects-selection {
+        .projects-selection-highlight {
+          display: flex;
+          width: 85px;
+          height: 5px;
+          position: relative;
+          bottom: 16px;
+          background-color: $gold;
+        }
+      }
+    }
+  }
+}
 nav {
-  // landing page only //
+  // for mobile landing page only //
   .nav-mobile {
     position: absolute;
     width: 100%;
@@ -151,7 +184,8 @@ nav {
       }
     }
   }
-  // all pages except landing page //
+
+  // all mobile pages except landing page //
   .nav-mobile-dark {
     position: absolute;
     width: 100%;
@@ -278,7 +312,6 @@ nav {
           .projects-selection {
             .projects-selection-highlight {
               &.open {
-                display: none;
                 display: flex;
                 width: 85px;
                 height: 5px;
