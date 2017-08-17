@@ -48,6 +48,7 @@
         left: 12.5%;
       }
       h1 {
+        position: absolute;
         margin-left: 15px;
         @media #{$breakpoint-medium} {
           margin-left: 25px;

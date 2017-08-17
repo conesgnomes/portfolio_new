@@ -10,6 +10,7 @@ $(function() {
     $('.mobile-nav-text').toggleClass('open');
     $('.nav-span').toggleClass('open');
     $('.projects-selection-highlight').toggleClass('open');
+    $('.home-selection-highlight').toggleClass('open');
 	});
 
 });
