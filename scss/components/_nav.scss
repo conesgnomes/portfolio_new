@@ -63,6 +63,15 @@
           background-color: $gold;
         }
       }
+      .bio-selection {
+        .bio-selection-highlight {
+          display: flex;
+          height: 5px;
+          position: relative;
+          bottom: 16px;
+          background-color: $gold;
+        }
+      }
     }
   }
 }
@@ -340,7 +349,15 @@ nav {
             .projects-selection-highlight {
               &.open {
                 display: flex;
-                width: 85px;
+                height: 5px;
+                background-color: $gold;
+              }
+            }
+          }
+          .bio-selection {
+            .bio-selection-highlight {
+              &.open {
+                display: flex;
                 height: 5px;
                 background-color: $gold;
               }

@@ -1,0 +1,76 @@
+.bio-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  h1 {
+    margin-left: 5%;
+    @media #{$breakpoint-large} {
+      margin-left: 9%;
+    }
+  }
+  @media #{$breakpoint-medium} {
+    top: 115px;
+  }
+  @media #{$breakpoint-large} {
+    top: 200px;
+  }
+  .connor-pic-container {
+    border: solid red 1px;
+    position: relative;
+    margin: 60px 0 0 5%;
+    @media #{$breakpoint-medium} {
+      margin-left: 100px;
+    }
+    @media #{$breakpoint-large} {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 50px;
+    }
+    img {
+      width: 50%;
+      object-fit: contain;
+    }
+  }
+  .bio-copy {
+    margin: 20px 20px;
+    hr {
+      width: 70%;
+      border: solid 1.5px $grey;
+      margin: 50px auto;
+    }
+    @media #{$breakpoint-medium} {
+      margin: 25px 100px 25px 100px;
+    }
+    @media #{$breakpoint-large} {
+      position: relative;
+      top: -200px;
+      width: 55vw;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      button {
+        @include button;
+        margin: 50px 0;
+        -webkit-transition: .2s ease-in-out;
+        -moz-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        &:hover {
+          @include button-hover;
+          -webkit-transition: .2s ease-in-out;
+          -moz-transition: .2s ease-in-out;
+          -o-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+        }
+      }
+    }
+    .process {
+      h1 {
+        text-align: center;
+        margin: 50px 0 75px 0;
+      }
+    }
+  }
+}
