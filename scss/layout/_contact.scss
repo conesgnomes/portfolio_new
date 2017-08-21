@@ -76,12 +76,15 @@
       input[type="submit"] {
         @include button;
         margin: 50px 0;
+        color: $cream;
+        cursor: pointer;
         -webkit-transition: .2s ease-in-out;
         -moz-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
         &:hover {
           @include button-hover;
+          color: $grey;
           -webkit-transition: .2s ease-in-out;
           -moz-transition: .2s ease-in-out;
           -o-transition: .2s ease-in-out;

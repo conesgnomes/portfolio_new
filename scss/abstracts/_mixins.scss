@@ -1,19 +1,24 @@
 @mixin button {
   background-color: $grey;
-  color: $cream;
   font-family: "playfair-display-reg", serif;
   font-size: 25px;
   border: solid 3px $grey;
   padding: 10px 54px;
+  a {
+    color: $cream;
+    text-decoration: none;
+  }
 }
 
 @mixin button-hover {
   background-color: $cream;
-  color: $grey;
   font-family: "playfair-display-reg", serif;
   font-size: 25px;
   border: solid 3px $grey;
   padding: 10px 54px;
+  a {
+    color: $grey;    
+  }
   // div {
   //   position: relative;
   //   &:after {
