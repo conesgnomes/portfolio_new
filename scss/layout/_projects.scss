@@ -17,23 +17,6 @@
     }
   }
 }
-.name-bar {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  left: 5%;
-  top: 60px;
-  background-color: $grey;
-  width: 90%;
-  height: 20px;
-  @media #{$breakpoint-medium} {
-    height: 35px;
-  }
-  @media #{$breakpoint-large} {
-    height: 50px;
-    left: 6%;
-  }
-}
 .content {
   position: relative;
   top: 100px;

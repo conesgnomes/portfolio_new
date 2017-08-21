@@ -21,12 +21,12 @@
       <div class="nav-desktop-dark">
         <ul>
           <li><a href="index.html">home</a></li>
-          <div class="projects-selection left-nav-item">
-            <span class="projects-selection-highlight"></span>
-            <li><a href="projects.html">projects</a></li>
-          </div>
+          <li class="left-nav-item"><a href="projects.html">projects</a></li>
           <li class="right-nav-item"><a href="bio.html">bio</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <div class="contact-selection">
+            <span class="contact-selection-highlight"></span>
+            <li><a href="contact.html">contact</a></li>
+          </div>
         </ul>
       </div>
     </div>
@@ -44,12 +44,12 @@
           <div class="mobile-nav-text">
             <ul>
               <li><a href="index.html">home</a></li>
-              <div class="projects-selection">
-                <span class="projects-selection-highlight"></span>
-                <li><a href="projects.html">projects</a></li>
+              <li class="left-nav-item"><a href="projects.html">projects</a></li>
+              <li class="right-nav-item"><a href="bio.html">bio</a></li>
+              <div class="contact-selection">
+                <span class="contact-selection-highlight"></span>
+                <li><a href="contact.html">contact</a></li>
               </div>
-              <li><a href="bio.html">bio</a></li>
-              <li><a href="contact.html">contact</a></li>
             </ul>
             <hr>
             <div class="social-mobile">
@@ -62,46 +62,32 @@
         </div>
       </div>
     </nav>
-    <div class="content">
-      <h1>Site Design & Branding</h1>
-      <div class="project-group">
-        <a href="#">
-          <div class="project">
-            <img src="../img/palm.png" alt="Palm frond">
-            <h3 data-hover="view project" class="project-title">Project 1</h3>
+    <div class="contact-body">
+      <h1>say hey</h1>
+      <p>Get in touch and tell me your thoughts and ideas for your next great project. I want to learn about you and your work. Let’s create something amazing together.</p>
+      <form id="contact-form" action="https://formspree.io/connorlarsen@gmail.com" method="POST">
+        <div class="contact-names">
+          <div class="label-input">
+            <label>First Name*</label>
+            <input type="text" name="first-name">
           </div>
-        </a>
-        <a href="#">
-          <div class="project">
-            <img src="../img/palm.png" alt="Palm frond">
-            <h3 class="project-title">Project 1</h3>
+          <div class="label-input">
+            <label>Last Name*</label>
+            <input type="text" name="last-name">
           </div>
-        </a>
-        <a href="#">
-          <div class="project">
-            <img src="../img/palm.png" alt="Palm frond">
-            <h3 class="project-title">Project 1</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="project">
-            <img src="../img/palm.png" alt="Palm frond">
-            <h3 class="project-title">Project 1</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="project">
-            <img src="../img/palm.png" alt="Palm frond">
-            <h3 class="project-title">Project 1</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="project">
-            <img src="../img/palm.png" alt="Palm frond">
-            <h3 class="project-title">Project 1</h3>
-          </div>
-        </a>
-      </div>
+        </div>
+        <div class="label-input">
+          <label>Email Address*</label>
+          <input type="email" name="_replyto">
+        </div>
+        <div class="label-input">
+          <label>Message*</label>
+          <textarea rows="4" name="" form="contact-form"></textarea>
+        </div>
+        <div class="button-container">
+          <input type="submit" value="submit">
+        </div>
+      </form>
     </div>
     <div class="footer">
       <p>© 2017 conesgnomes</p>

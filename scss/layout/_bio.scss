@@ -3,17 +3,17 @@
   display: flex;
   flex-direction: column;
   top: 100px;
-  h1 {
-    margin-left: 5%;
-    @media #{$breakpoint-large} {
-      margin-left: 9%;
-    }
-  }
   @media #{$breakpoint-medium} {
     top: 115px;
   }
   @media #{$breakpoint-large} {
     top: 200px;
+  }
+  h1 {
+    margin-left: 5%;
+    @media #{$breakpoint-large} {
+      margin-left: 9%;
+    }
   }
   .connor-pic-container {
     margin: 60px 0 0 5%;
@@ -24,13 +24,15 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
-      margin-right: 50px;
+      margin: 0 50px 0 5%;
     }
     img {
       width: 50%;
       object-fit: contain;
       @media #{$breakpoint-large} {
-        width: 40%;
+        width: 35%;
+        position: absolute;
+        top: 300px;
       }
     }
   }
@@ -40,9 +42,7 @@
       margin: 25px 100px 25px 100px;
     }
     @media #{$breakpoint-large} {
-      margin: 25px 50px 25px 100px;
-      position: relative;
-      bottom: 350px;
+      margin: 0 50px 25px 9%;
       .section-one {
         width: 55%;
       }
@@ -52,7 +52,6 @@
         margin-top: 50px;
       }
       @media #{$breakpoint-large} {
-        // border: solid red 1px;
         margin-top: 100px;
         display: flex;
         align-items: center;
@@ -61,6 +60,12 @@
           margin: 0 50px;
           border: solid $grey 1px;
         }
+      }
+      @media only screen and (min-width: 1100px) {
+        margin-top: 200px;
+      }
+      @media only screen and (min-width: 1290px) {
+        margin-top: 300px;
       }
     }
     .button-container {

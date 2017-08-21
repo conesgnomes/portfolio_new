@@ -12,6 +12,7 @@ $(function() {
     $('.projects-selection-highlight').toggleClass('open');
     $('.home-selection-highlight').toggleClass('open');
     $('.bio-selection-highlight').toggleClass('open');
+    $('.contact-selection-highlight').toggleClass('open');
 	});
 
 });

@@ -1,0 +1,93 @@
+.contact-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 20px;
+  top: 100px;
+  h1 {
+    margin-left: 5%;
+    @media #{$breakpoint-large} {
+      margin-left: 9%;
+    }
+  }
+  p {
+    margin: 20px 20px;
+    @media #{$breakpoint-medium} {
+      margin-left: 5%;
+      width: 65%;
+    }
+    @media #{$breakpoint-large} {
+      margin: 25px 50px 25px 9%;
+      position: relative;
+      width: 45%;
+    }
+  }
+  @media #{$breakpoint-medium} {
+    top: 115px;
+  }
+  @media #{$breakpoint-large} {
+    top: 200px;
+  }
+  form {
+    margin-left: 5%;
+    @media #{$breakpoint-medium} {
+      margin-left: 5%;
+    }
+    @media #{$breakpoint-large} {
+      margin: 25px 50px 25px 9%;
+      position: relative;
+    }
+    .label-input {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-top: 25px;
+      }
+      input {
+        border: solid 3px $grey;
+        height: 50px;
+      }
+      textarea {
+        border: solid 3px $grey;
+        height: 100px;
+      }
+    }
+    .contact-names {
+      @media #{$breakpoint-medium} {
+        display: flex;
+        justify-content: space-between;
+        .label-input {
+          width: 100%;
+          input {
+            width: 100%;
+          }
+          &:last-of-type {
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      @media #{$breakpoint-large} {
+        justify-content: flex-start;
+      }
+      input[type="submit"] {
+        @include button;
+        margin: 50px 0;
+        -webkit-transition: .2s ease-in-out;
+        -moz-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        &:hover {
+          @include button-hover;
+          -webkit-transition: .2s ease-in-out;
+          -moz-transition: .2s ease-in-out;
+          -o-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+        }
+      }
+    }
+  }
+}

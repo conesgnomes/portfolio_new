@@ -14,21 +14,21 @@
   font-size: 25px;
   border: solid 3px $grey;
   padding: 10px 54px;
-  div {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      left: 100px;
-      bottom: 5px;
-      display: block;
-      width: 15px;
-      height: 15px;
-      border-top: solid $grey 2px;
-      border-right: solid $grey 2px;
-      border-bottom: none;
-      border-left: none;
-      transform: rotate(45deg);
-    }
-  }
+  // div {
+  //   position: relative;
+  //   &:after {
+  //     content: '';
+  //     position: absolute;
+  //     left: 100px;
+  //     bottom: 5px;
+  //     display: block;
+  //     width: 15px;
+  //     height: 15px;
+  //     border-top: solid $grey 2px;
+  //     border-right: solid $grey 2px;
+  //     border-bottom: none;
+  //     border-left: none;
+  //     transform: rotate(45deg);
+  //   }
+  // }
 }
