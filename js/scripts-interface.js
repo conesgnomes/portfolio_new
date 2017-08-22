@@ -14,5 +14,5 @@ $(function() {
     $('.bio-selection-highlight').toggleClass('open');
     $('.contact-selection-highlight').toggleClass('open');
 	});
-
+  
 });

@@ -194,7 +194,7 @@ nav {
         -o-transition: height, 0.25s linear;
         transition: height, 0.25s linear;
         @media #{$breakpoint-medium} {
-          height: 115px;
+          height: 112px;
         }
       }
       .mobile-nav-text {
@@ -230,7 +230,6 @@ nav {
       }
     }
   }
-
   // all mobile pages except landing page //
   .nav-mobile-dark {
     position: absolute;
@@ -344,7 +343,7 @@ nav {
         -o-transition: height, 0.25s linear;
         transition: height, 0.25s linear;
         @media #{$breakpoint-medium} {
-          height: 115px;
+          height: 112px;
         }
       }
       .mobile-nav-text {
