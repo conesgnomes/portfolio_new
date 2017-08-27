@@ -38,6 +38,10 @@
   }
   .bio-copy {
     margin: 20px 20px;
+    span {
+      font-family: "playfair-display-reg";
+      font-style: italic;
+    }
     @media #{$breakpoint-medium} {
       margin: 25px 100px 25px 100px;
     }
@@ -45,15 +49,19 @@
       margin: 0 50px 25px 9%;
       .section-one {
         width: 60%;
-        span {
-          font-family: "playfair-display-reg";
-          font-style: italic;
-        }
       }
     }
     .section-two {
       h2{
         margin-top: 50px;
+      }
+      .what {
+        ul {
+          padding-left: 0;
+          li {
+            list-style: none;
+          }
+        }
       }
       @media #{$breakpoint-large} {
         margin-top: 200px;
@@ -72,12 +80,6 @@
           display: flex;
           flex-direction: column;
           align-self: flex-start;
-          ul {
-            padding-left: 0;
-            li {
-              list-style: none;
-            }
-          }
         }
       }
       @media only screen and (min-width: 1100px) {
