@@ -7,7 +7,7 @@
     top: 115px;
   }
   @media #{$breakpoint-large} {
-    top: 200px;
+    top: 300px;
   }
   h1 {
     margin-left: 5%;
@@ -32,177 +32,128 @@
       @media #{$breakpoint-large} {
         width: 30%;
         position: absolute;
-        top: 250px;
+        top: -100px;
       }
     }
   }
   .project-desc-1 {
-    margin: 20px 20px 20px 5%;
+    margin: 0 20px 20px 5%;
     @media #{$breakpoint-medium} {
       margin: 25px 100px 25px 100px;
     }
     @media #{$breakpoint-large} {
       margin: 0 50px 25px 9%;
-      width: 60%;
+      p {
+        width: 60%;
+      }
     }
   }
-  .button-container {
-    display: flex;
-    justify-content: center;
-    button {
-      @include button;
-      @media #{$breakpoint-large} {
-        margin: 50px 0 100px 0;
+  .button-wrapper {
+    @media #{$breakpoint-medium} {
+      display: flex;
+      justify-content: center;
+      .button-container:first-of-type {
+        margin-right: 50px;
       }
-      margin: 50px 0 0 0;
-      -webkit-transition: .2s ease-in-out;
-      -moz-transition: .2s ease-in-out;
-      -o-transition: .2s ease-in-out;
-      transition: .2s ease-in-out;
-      &:hover {
-        @include button-hover;
+      .button-container:last-of-type {
+        margin-left: 50px;
+      }
+     }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      @media #{$breakpoint-large} {
+        margin-left: 9%;
+      }
+      button {
+        @include button;
+        @media #{$breakpoint-large} {
+          margin: 50px 0 100px 0;
+        }
+        margin: 50px 0 0 0;
         -webkit-transition: .2s ease-in-out;
         -moz-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
+        &:hover {
+          @include button-hover;
+          -webkit-transition: .2s ease-in-out;
+          -moz-transition: .2s ease-in-out;
+          -o-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+        }
       }
     }
   }
   .project-pic-2 {
     margin: 60px 20px 0 5%;
     @media #{$breakpoint-medium} {
-      margin-left: 100px;
+      margin: 100px 100px 0 100px;
     }
     @media #{$breakpoint-large} {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: flex-start;
-      margin: 0 50px 0 5%;
+      margin: 30px 50px 0 9%;
     }
     img {
       width: 100%;
       object-fit: contain;
       @media #{$breakpoint-large} {
-        width: 30%;
-        position: absolute;
-        top: 250px;
+        width: 100%;
       }
     }
   }
   .project-desc-2 {
     margin: 20px 20px 20px 5%;
     @media #{$breakpoint-medium} {
-      margin: 25px 100px 25px 100px;
+      margin: 25px 100px 0 100px;
     }
     @media #{$breakpoint-large} {
-      margin: 0 50px 25px 9%;
-      width: 60%;
+      margin: 50px 50px 25px 9%;
     }
   }
-  .project-pic-3 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin: 50px 20px 0 0;
-    @media #{$breakpoint-medium} {
-      margin-left: 100px;
-    }
+  .project-3 {
     @media #{$breakpoint-large} {
+      display: flex;
+      justify-content: space-around;
+      margin: 100px 0 0 5%;
+    }
+    .project-pic-3 {
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
-      margin: 0 50px 0 5%;
-    }
-    img {
-      width: 50%;
-      object-fit: contain;
+      margin: 20px 20px 0 0;
+      @media #{$breakpoint-medium} {
+        margin: 100px 0 0 100px;
+        justify-content: flex-start;
+      }
       @media #{$breakpoint-large} {
-        width: 30%;
-        position: absolute;
-        top: 250px;
+        width: 40%;
+        margin: 0;
+      }
+      img {
+        width: 50%;
+        object-fit: contain;
+        @media #{$breakpoint-large} {
+          width: 100%;
+        }
+      }
+    }
+    .project-desc-3 {
+      margin: 20px 20px 20px 5%;
+      @media #{$breakpoint-medium} {
+        margin: 25px 100px 25px 100px;
+      }
+      @media #{$breakpoint-large} {
+        margin: 0;
+        width: 45%;
       }
     }
   }
-  .project-desc-3 {
-    margin: 20px 20px 20px 5%;
-    @media #{$breakpoint-medium} {
-      margin: 25px 100px 25px 100px;
-    }
-    @media #{$breakpoint-large} {
-      margin: 0 50px 25px 9%;
-      width: 60%;
-    }
+}
+.footer-project {
+  @media #{$breakpoint-large} {
+    margin-top: 350px;
   }
 }
-
-  // old stuff
-
-    // .section-two {
-    //   h2{
-    //     margin-top: 50px;
-    //   }
-    //   @media #{$breakpoint-large} {
-    //     margin-top: 200px;
-    //     display: flex;
-    //     align-items: center;
-    //     .who {
-    //       width: 50%;
-    //     }
-    //     .vertical-divider {
-    //       height: 250px;
-    //       margin: 0 50px;
-    //       border: solid $grey 1px;
-    //     }
-    //     .what {
-    //       width: 50%;
-    //       display: flex;
-    //       flex-direction: column;
-    //       align-self: flex-start;
-    //       ul {
-    //         padding-left: 0;
-    //         li {
-    //           list-style: none;
-    //         }
-    //       }
-    //     }
-    //   }
-    //   @media only screen and (min-width: 1100px) {
-    //     margin-top: 350px;
-    //   }
-    //   @media only screen and (min-width: 1290px) {
-    //     margin-top: 400px;
-    //   }
-    //   @media only screen and (min-width: 1500px) {
-    //     margin-top: 500px;
-    //   }
-    // }
-    // hr {
-    //   width: 70%;
-    //   border: solid 1.5px $grey;
-    //   margin: 75px auto;
-    //   @media #{$breakpoint-large} {
-    //     display: none;
-    //   }
-    // }
-    // .process {
-    //   h1 {
-    //     text-align: center;
-    //     margin: 50px 0 25px 0;
-    //   }
-    //   .phases {
-    //     .phase:nth-of-type(n+1) {
-    //       margin-top: 50px;
-    //     }
-    //     @media #{$breakpoint-large} {
-    //       display: flex;
-    //       align-items: center;
-    //       .vertical-divider {
-    //         height: 500px;
-    //         margin: 0 50px;
-    //         border: solid $grey 1px;
-    //       }
-    //     }
-    //   }
-    // }
-  // }
-// }
