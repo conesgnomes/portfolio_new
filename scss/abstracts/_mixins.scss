@@ -1,8 +1,8 @@
 @mixin button {
-  background-color: $grey;
+  background-color: $gold;
   font-family: "playfair-display-reg", serif;
   font-size: 25px;
-  border: solid 3px $grey;
+  border: solid 3px $gold;
   padding: 10px 54px;
   a {
     color: $cream;
@@ -14,10 +14,10 @@
   background-color: $cream;
   font-family: "playfair-display-reg", serif;
   font-size: 25px;
-  border: solid 3px $grey;
+  border: solid 3px $gold;
   padding: 10px 54px;
   a {
-    color: $grey;    
+    color: $gold;
   }
   // div {
   //   position: relative;

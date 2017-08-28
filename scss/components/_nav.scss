@@ -21,7 +21,7 @@
         margin-right: 30px;
       }
       .home-selection {
-        .home-selection-highlight {
+        &-highlight {
           display: flex;
           height: 5px;
           position: relative;
@@ -180,16 +180,16 @@ nav {
       flex-direction: column;
       justify-content: center;
       justify-content: space-around;
-      -webkit-transition:height, 0.25s linear;
-      -moz-transition: height, 0.25s linear;
-      -ms-transition: height, 0.25s linear;
-      -o-transition: height, 0.25s linear;
-      transition: height, 0.25s linear;
+      -webkit-transition:height, 0s linear;
+      -moz-transition: height, 0s linear;
+      -ms-transition: height, 0s linear;
+      -o-transition: height, 0s linear;
+      transition: height, 0s linear;
       &.open {
         height: 100px;
         margin-bottom: 15px;
         -webkit-transition:height, 0.25s linear;
-        -moz-transition: height, 0.2s linear;
+        -moz-transition: height, 0.25s linear;
         -ms-transition: height, 0.25s linear;
         -o-transition: height, 0.25s linear;
         transition: height, 0.25s linear;
@@ -329,11 +329,11 @@ nav {
       flex-direction: column;
       justify-content: center;
       justify-content: space-around;
-      -webkit-transition:height, 0.25s linear;
-      -moz-transition: height, 0.25s linear;
-      -ms-transition: height, 0.25s linear;
-      -o-transition: height, 0.25s linear;
-      transition: height, 0.25s linear;
+      -webkit-transition:height, 0s linear;
+      -moz-transition: height, 0s linear;
+      -ms-transition: height, 0s linear;
+      -o-transition: height, 0s linear;
+      transition: height, 0s linear;
       &.open {
         height: 95px;
         margin-bottom: 15px;
