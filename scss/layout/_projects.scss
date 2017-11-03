@@ -44,7 +44,9 @@
           object-fit: cover;
           width: 100%;
           position: relative;
-          filter: grayscale(80%);
+          @media #{$breakpoint-large} {
+            filter: grayscale(80%);  
+          }
         }
         .project-title {
           position: absolute;
